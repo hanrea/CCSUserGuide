@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>To Use the Project</title>
+<meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D game engine, game development" />
+<meta name="Description" content="CocoStudio Help,CocoStudio Manual,CocoStudio Guide"/>
+<link type="text/css" rel="stylesheet" href="style/style.css"  />
+</head>
+<body id="split">
+<div id="content">
+  <div rel="aboutXMLDoc">
+    <h2>To Use the Project</h2>
+    <h3>Export</h3>
+    <div class="desc">
+      <ol>
+      <li>From the File menu, select the Export Projects option.</li><br />
+       	  <img src="img/3-5-img-01.png" alt="" />
+           
+          <li>Set the export directory and other options.</li><br />
+        <img src="img/3-5-img-02.png" alt="" /><br />
+        <li>Select Yes to start the export.</li><br />
+          <img src="img/ExportOK.png" alt="" />
+        </ol>
+		
+    </div>
+    <h3>Copy file</h3>
+    <div class="desc">
+		<p>&nbsp;</p>
+		<p>Copies all files under the export directory to the project's Resource directory.</p>
+		<p>&nbsp;</p>
+</div>
+    
+        <h3>Use</h3>
+    <div class="desc">
+		<p>&nbsp;</p>
+		<p>Copies export files to the Resource directory, assuming the canvas name is "UIEditorTest_1."</p>
+		<div class="longdesc">
+			
+			<pre class="code">
+UILayer* ul =UILayer::create();
+ul->addWidget(CCUIHELPER->createWidgetFromJsonFile("UIEditorTest_1.json"));
+</pre>
+			
+		</div>
+    </div>
+ 
+    
+
+  
+ 
+ </div>
+    <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp; Ver:1.1.0 </div>
+</div>
+</body>
+</html>

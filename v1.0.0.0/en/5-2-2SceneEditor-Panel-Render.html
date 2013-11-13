@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Render Panel</title>
+<meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D game engine, game development" />
+<meta name="Description" content="CocoStudio Help,CocoStudio Manual,CocoStudio Guide"/>
+<link type="text/css" rel="stylesheet" href="style/style.css"  />
+</head>
+<body id="split">
+<div id="content">
+  <div rel="aboutXMLDoc">
+    <h2>Render Panel</h2>
+    <h3>Introduction</h3>
+    <div class="desc">
+		
+		<p><img src="img/5-2-2-img-01.png" alt="" /></p>
+		<p>&nbsp;</p>
+		<p>The Render window provides a rendering control panel which displays a real-time effect preview. </p>
+		<p>&nbsp;</p>
+    </div>
+     <h3>Feature</h3>
+    <div class="desc">
+    	
+        	<h4>Marquee</h4>
+            <div>
+             <img src="img/5-2-2-img-02.png" alt="" />
+                            <p>&nbsp;</p>
+              <p>Use the mouse controls to copy, delete and create settings for the marquee. </p>
+              <p><br />
+              </p>
+      </div>
+           <h4>Adjusting the view</h4>
+            <div>
+              <img src="img/5-2-2-img-03.png" alt="" />
+              <p>&nbsp;</p>
+<p>Directions: </p>
+<p> 1. At points 1,2,4,5, you can use the mouse to resize the component and retractable controls. Press and hold down the Shift key to geometrically scale.</p>
+<p> 2. Point 3 allows you to rotate the control.</p>
+<p> Note: Use the above feature to mount the Node of Sprite component, UI component or Map component.</p>
+<p>&nbsp;</p>
+            </div>
+   	</div>
+   
+ 
+    
+  
+    <h3>Right-Click Menu</h3>
+    <div class="desc">
+	<div class="longdesc">
+        	<h4>Add Object</h4>
+           
+          	<div class="RightMenu">
+          	 <img src="img/5-2-2-img-04.png" alt="" />
+          	  <p>Adding an object to the canvas</p>
+          	  <p>&nbsp;</p>
+        </div>
+              <div class="warning">
+                <p>When you select a scene and right-click to add the scene to another object as a subset, please note that
+                  if you selected nothing as the target object, the scene will be added to the root object as a subset. </p>
+        </div>
+              
+          
+          
+         <h4>Delete Object</h4>
+          <div >
+           <img src="img/5-2-2-img-05.png" alt="" />
+            <p>Deletes the selected object</p>
+          </div>
+           <div class="warning">
+                 <p>1. If no object or only one object is selected, this menu item is masked.</p>
+<p> 2. If you delete an object which contains a subset, the subset will be deleted.</p>
+                 <p>&nbsp;</p>
+        </div>
+      
+        
+    
+        
+      <h4>Add Components</h4>
+      <div>
+       <img src="img/5-2-2-img-06.png" alt="" />
+        <p>&nbsp;</p>
+        <table cellspacing="0" cellpadding="0" border="1">
+          
+          <tr>
+            <td width="75">Armature Component</td>
+            <td width="346">The Armature animation component is a rendering component which is used to render Armature animations. If you mount the Armature animation component, an empty object can be converted into an animation object.  </td>
+          </tr>
+          <tr>
+            <td>Map Component</td>
+            <td>The Map component is a rendering component which is used to render the tmx format map file. If you mount the map component, an empty object can be converted into a map object.</td>
+          </tr>
+          <tr>
+            <td>UI Component</td>
+            <td>The UI component is a rendering component which is used to render UI controls. If you mount the UI component, an empty object can be converted into an UI object.</td>
+          </tr>
+          <tr>
+            <td>Particle Component</td>
+            <td>The Particle component is a rendering component which is used to render pliat format Particle files. If you mount the Particle component, an empty object can be converted into a Particle object.</td>
+          </tr>
+          <tr>
+            <td>Custom Property</td>
+            <td>The Custom Property component is used to load data from the json file.</td>
+          </tr>
+          <tr>
+            <td>Audio</td>
+            <td>The Audio Component is used to play mp3 and wav format audio files.</td>
+          </tr>
+          <tr>
+            <td>Sprite</td>
+            <td>The Sprite component is a rendering component which is used to render png format image files.</td>
+          </tr>
+        </table>
+        <p>&nbsp;</p>
+      </div>
+         <div class="warning">
+           <p>1. An empty object can only mount one rendering component.</p>
+           <p>2. An empty object can only add an audio component and a Custom Property Component.</p>
+</div>
+        
+           
+      <h4>Delete Component</h4>
+      <div>
+        <img src="img/5-2-2-img-07.png" alt="" />
+        <table cellspacing="0" cellpadding="0" border="1">
+         
+          <tr>
+            <td width="86">Armature Component</td>
+            <td width="238">Remove Armature Component</td>
+          </tr>
+          <tr>
+            <td>Map Component</td>
+            <td>Remove Map Component</td>
+          </tr>
+          <tr>
+            <td>UI Component</td>
+            <td>Remove UI Component</td>
+          </tr>
+          <tr>
+            <td>Particle Component</td>
+            <td>Remove Particle Component</td>
+          </tr>
+          <tr>
+            <td>Custom Property</td>
+            <td>Remove Custom Property Component</td>
+          </tr>
+          <tr>
+            <td>Audio Component</td>
+            <td>Remove Audio Component</td>
+          </tr>
+          <tr>
+            <td>Sprite Component</td>
+            <td>Remove Sprite Component</td>
+          </tr>
+        </table>
+        <p>&nbsp;</p>
+      </div>
+         <div class="warning">
+           <p>If the selected node does not contain a component, the component corresponding menu item will be shielded.</p>
+</div>
+        
+        
+              
+      <h4>Copy</h4>
+      <div><img src="img/5-2-2-img-08.png" alt="" /> </div>
+         <div class="warning">
+           <p>1. If no object is selected, the menu item will be masked.</p>
+           <p>2. The keyboard shortcut Ctrl + C for multiple selection is also supported.</p>
+</div>
+                  
+      <h4>Paste</h4>
+      <div><img src="img/5-2-2-img-09.png" alt="" /> </div>
+         <div class="warning">
+           <p>1. If the object is not copied, this menu item is masked.</p>
+           <p>2. The pasting position varies according to the mouse position.</p>
+           <p>3. When using the keyboard shortcut Ctrl + V to paste, the current position is the pasted object replication. </p>
+</div>
+        
+      </div>
+
+ </div>
+
+</div>
+    <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp; Ver:1.1.0 </div>
+</div>
+</body>
+</html>

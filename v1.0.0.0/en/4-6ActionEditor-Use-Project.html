@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Use in Project</title>
+<meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D game engine, game development" />
+<meta name="Description" content="CocoStudio Help,CocoStudio Manual,CocoStudio Guide"/>
+<link type="text/css" rel="stylesheet" href="style/style.css"  />
+</head>
+<body id="split">
+<div id="content">
+  <div rel="aboutXMLDoc">
+    <h2>Use in Project</h2>
+       <h3>Export</h3>
+        <div class="desc">
+            <ol>
+        	<li>From the File menu, select the Export Projects option.</li><br />
+        	<img src="img/4-6-img-01.png" alt="" />
+            <li>Sets the export directory and other options.</li><br />
+           <img src="img/4-6-img-02.png" alt="" />
+            <li>Select Yes to start the export.</li><br />
+            <img src="img/ExportOK.png" alt="" />
+        </ol>
+</div>
+       <h3>Copy file</h3>
+    <div class="desc">
+		<p>&nbsp;</p>
+		<p>Copies all files located in the export directory to the project's Resource directory.</p>
+		<p>&nbsp;</p>
+    </div>
+    
+    <h3>Use</h3>
+    <div class="desc">
+		<p>Copies export files to the Resource directory.</p>
+		<div class="longdesc">
+			
+			<pre class="code">
+CCArmatureDataManager::sharedArmatureDataManager()->addArmatureFileInfo("Cowboy0.png","Cowboy0.plist","Cowboy.ExportJson");
+CCArmature *armature = CCArmature::create("Cowboy");
+armature->getAnimation()->playByIndex(0);
+armature->setScale(0.5f);
+armature->setPosition(ccp(visibleSize.width * 0.5, visibleSize.height * 0.5));
+this->addChild(armature,2)
+</pre>
+			
+		</div>
+    </div>
+ </div>
+   <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp; Ver:1.1.0 </div>
+</div>
+</body>
+</html>

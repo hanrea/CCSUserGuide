@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>General Operations of Action Editor</title>
+<meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D game engine, game development" />
+<meta name="Description" content="CocoStudio Help,CocoStudio Manual,CocoStudio Guide"/>
+<link type="text/css" rel="stylesheet" href="style/style.css"  />
+</head>
+<body id="split">
+<div id="content">
+  <div rel="aboutXMLDoc">
+    <h2>General Operations of Action Editor</h2>
+    
+    <h3  id="properties">Create skeleton</h3>
+    <div class="desc">
+      <div class="longdesc">
+        	<h4>Animation Examples</h4>
+            <div>
+            	<img src="img/4-3-img-01.gif" alt="" />
+            	<p>&nbsp;</p>
+            </div> 
+            <h4>Needed Mode</h4>
+            <div class="mode">
+            	<ol>
+                	<li>Physical Mode</li>
+               
+                    <li>Create Skeleton</li>
+                </ol>
+            </div> 
+        <h4>Procedure</h4>     
+            <div>
+            	<p>&nbsp;</p>
+           	  <p>1. Use the left mouse button in the rendering area to start drawing skeletons.</p>
+             	<p>2. Release the mouse to complete the drawing. An anchor will be displayed if the drawing is too short.</p>
+             	<p>&nbsp;</p>
+            </div>    
+   	  </div>
+    </div>
+
+    <h3  id="properties">Modify Skeleton</h3>
+    <div class="desc">
+      <div class="longdesc">
+        	<h4>Animation Examples</h4>
+        <div>
+       	  
+          <p><img src="img/4-3-img-02.gif" alt="" /></p>
+          <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+          </div>
+           <h4>Needed Mode</h4>
+            <div class="mode">
+            	<ol>
+                	<li>Physical Mode</li>
+                  
+                    <li>Stop create skeleton</li>
+                </ol>
+            </div> 
+            <h4>Operation</h4>     
+            <div>
+            	<h5>Adjust skeleton's direction</h5>
+              <div>Select the Rotate button located in the toolbar, <img src="img/4-2-12-img-07.png" alt="" /> then drag the needed skeletons to adjust the direction of the bone.</div>
+                <h5>Adjust the pivot position</h5>
+                <div>Select the pan buttons in the toolbar.<img src="img/4-2-12-img-08.png" alt="" />, then drag the skeleton to adjust the position of the skeleton.</div>
+                <h5>Adjust the length of the skeleton</h5>
+                <div>Select the Zoom In button in the toolbar.<img src="img/4-2-12-img-09.png" alt="" />, then drag the skeleton to adjust the length of the skeleton.</div>
+                
+            	
+        </div>              
+   	  </div>
+    </div>
+    
+    
+    <h3  id="properties">Add Texture</h3>
+    <div class="desc">
+      <div class="longdesc">
+        	<h4>Animation Example</h4>
+            <div>
+           	  <div >
+           	    <p><img src="img/4-3-img-03.gif" alt="" /></p>
+           	    <p>&nbsp;</p>
+           	  </div>
+            </div>
+             <h4>Needed Mode</h4>
+            <div class="mode">
+            	<ol>
+                	<li>Physical Mode</li>
+                  
+                    <li>Stop to create skeleton</li>
+                </ol>
+            </div> 
+            <h4>Procedure</h4>     
+            <div>
+            	<p>&nbsp;</p>
+            	<p>Solution A: Select skeleton, drag the picture from the resource panel to the rendering resource properties box of the properties panel.</p>
+            	<p>Solution B: Drag the texture from the resource panel to the rendering panel.</p>
+            	<p>&nbsp;</p>
+            	<div class="warning">Note: Solution A will be binded to the skeleton directly, and won't be changed.</div>
+            </div>              
+   	  </div>
+    </div>
+    
+        
+    <h3  id="properties">Bind to bone</h3>
+    <div class="desc">
+      <div class="longdesc">
+        	<h4>Animation Example</h4>
+        <div>
+       	 
+           	  <img src="img/4-3-img-04.gif" alt="" />
+            </div>
+             <h4>Needed Mode</h4>
+            <div class="mode">
+       	  <ol>
+                	<li>Physical Mode</li>
+                 
+                    <li>Stop to create skeleton</li>
+                </ol>
+            </div> 
+    <h4>Procedure</h4>     
+            <div>
+            	<p>&nbsp;</p>
+            	<p>1. Select the texture in the rendering panel and then select the content menu option Bind to skeleton or Alt+ F.</p>
+            	<p>2. Select the skeleton in the rendering panel, which is needed to be binded.</p>
+            	<p>3. Software notification: &quot;Picture will be binded to the skeleton, continue? Select the Yes option.</p>
+            	<p>&nbsp;</p>
+            </div>              
+   	  </div>
+    </div>
+    
+     <h3  id="properties">Bind parent relationship</h3>
+    <div class="desc">
+      <div class="longdesc">
+        	<h4>Animation Examples</h4>
+        <div>
+       	  
+           	  <img src="img/4-3-img-05.gif" alt="" />
+            </div>
+             <h4>Needed Mode</h4>
+            <div class="mode">
+       	  <ol>
+                	<li>Physical Mode</li>
+                  
+                    <li>Stop to create skeleton</li>
+                </ol>
+            </div> 
+    <h4>Procedure</h4>     
+            <div>
+            	<p>&nbsp;</p>
+            	<p>1. Select the skeleton in the rendering panel, which is about to be selected as a child.</p>
+            	<p>2. Select the content menu option Bind to parent or Alt + P.</p>
+            	<p>3. Select the skeleton, which is about to be parent.</p>
+            	<p>&nbsp;</p>
+                <div class="warning">
+                  <p>&nbsp;</p>
+                  <p>Note: One skeleton has only one parent, but it can have many children.</p>
+                  <p>&nbsp;</p>
+                </div>
+            </div>              
+   	  </div>
+    </div>
+    
+      <h3  id="properties">Delete Selected</h3>
+    <div class="desc">
+      <div class="longdesc">
+        	<h4>Animation Examples</h4>
+        <div>
+       	 
+       	  <img src="img/4-3-img-06.png" alt="" />
+       	  <p>&nbsp;</p>
+        </div>
+         <h4>Needed Mode</h4>
+            <div class="mode">
+            	<ol>
+                	
+                    <li>Physical Mode</li>
+                    <li>Stop create skeleton</li>
+                </ol>
+            </div> 
+            <h4>Procedure</h4>     
+            <div>
+            	<p>&nbsp;</p>
+            	<p>1. Select the skeleton in the rendering panel, which is about to be deleted.</p>
+            	<p>2. Select the content menu option Delete Selected (DELETE) then the object can be deleted.</p>
+            	<p>&nbsp;</p>
+            	 <div class="warning">
+            	   <p>&nbsp;</p>
+            	   <p>Note: All the children will be removed when deleting; if just deleting the current skeleton, the parent relationship needs to be removed.</p>
+            	   <p>&nbsp;</p>
+            	 </div>
+            </div>        
+            </div>              
+   	  </div>
+    </div>
+    
+    
+    
+    
+    
+      <h3  id="properties">Remove parent relationship</h3>
+    <div class="desc">
+      <div class="longdesc">
+        	<h4>Animation Examples</h4>
+        <div>
+       	
+   	      <img src="img/4-3-img-07.gif" alt="" />
+   	      <p>&nbsp;</p>
+        </div>
+         <h4>Needed Mode</h4>
+            <div class="mode">
+            	<ol>
+                	<li>Physical Mode</li>
+                	<li>Stop to create skeleton</li>
+                </ol>
+        </div> 
+            <h4>Procedure</h4>     
+            <div>
+            	<p>&nbsp;</p>
+            	<p>1. Select the skeleton in the rendering panel, which is about to be deleted.</p>
+            	<p>2. Select the content menu option Remove parent relationship or ALT + D then the binding relationship can be removed.</p>
+            	<p>&nbsp;</p>
+            </div>              
+   	  </div>
+    </div>
+    
+     
+    
+  
+
+
+   <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp; Ver:1.1.0 </div>
+</div>
+</div> 
+</body>
+</html>
