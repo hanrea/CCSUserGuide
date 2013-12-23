@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>滚动层[UIScrollView]</title>
+<title>列表层[UIListView]</title>
 <meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D游戏引擎,游戏开发工具" />
 <meta name="Description" content="CocoStudio帮助手册,CocoStudio中文手册,游戏编辑器使用帮助,CocoStudio用户指南"/>
 <link type="text/css" rel="stylesheet" href="style/style.css"  />
@@ -10,21 +10,44 @@
 <body id="split">
 <div id="content">
   <div rel="aboutXMLDoc">
-    <h2>滚动层[UIScrollView]</h2>
+    <h2>列表层[UIListView]</h2>
     
     <h3>图标</h3>
     <div class="desc">
-    <div class="descimg"><img src="img/3-3-10-img-01.png" alt="" /></div>
+    <div class="descimg"><img src="img/3-3-17-img-01.png" alt="" /></div>
     </div>
     <h3>描述</h3>
     <div class="desc">
-		<p>UIScrollView的类是一个UIWidget子类，它实现了在触摸屏上的滚动层。<br />
+		<p>UIListView的类是一个UIWidget子类，它实现了在触摸屏上的列表层。<br />
 		</p>
 		<div class="longdesc">
 		  <p>触摸一个滚动层时拦截事件和动作消息发送到目标对象时。设定的目标和行动方法都继承自UIWidget。该控件提供了方法来设置滚动层的裁切，显示区域宽高，滚动区域宽高，背景色透明度，填充颜色，图片资源等属性。</p>
 		  <p>&nbsp;</p>
 			
 		</div>
+    </div>
+    <h3>子控件布局</h3>
+    <div class="desc">
+	 <h4>子控件间隔</h4>
+     <div>
+     设置子控件间的间隔，该值为子控件滑动方向上的相邻控件间隔。
+     </div>
+     <h4>子控件布局</h4>
+	 <div>
+     <h5>滑动方向</h5>
+     <div>设置子控件的滑动方向，同时子控件也会按照</div>
+     <h5>排列</h5>
+     <div>
+     <p>&nbsp;</p>
+     <p>设置子控件的停靠位置。</p>
+     <p>&nbsp; </p>
+     <ul>
+     <li>横向排列：若滑动方向为Vertical则显示该选项，可选值为HOEIZONTAL_LEFT（向左停靠）、HOEIZONTAL_RIGHT（向右停靠）、HOEIZONTAL_CENTER（横向停靠）</li>
+     <li>纵向排列：若滑动方向为Vertical则显示该选项，可选值为VERTICAL_TOP（向上停靠）、VERTICAL_BOTTOM（向下停靠）、VERTICAL_CENTER（居中停靠）</li>
+     </ul>
+      <p>&nbsp; </p>
+     </div>
+     </div>
     </div>
 	<h3>九宫格属性</h3>
     <div class="desc">
@@ -38,27 +61,10 @@
     	<p>请查看<a href="3-3-16UIEditor-General-Property.html#properties">UI控件常规属性页</a></p>
     	<p>&nbsp;</p>
     </div>
-       <h3>子控件布局</h3>
-    <div class="desc">
-    	<p><img src="img/3-3-9-img-03.png" alt="" /></p>
-   	  <p>&nbsp;</p>
-    	<p>子控件布局是针对层容器的子控件来设置的属性。</p>
-    	<p>&nbsp;</p>
-    	<ol>
-        <li>绝对布局 ：布局内所有控件位置都是固定的，通过指定控件坐标来定义坐标的位置。       
-        <li>相对布局
-        ：布局内所有的控件的位置它决定于它和其他控件的关系。
-        <li>线性横向
-        ：布局内所有的控件都被组织在同一行中。
-        <li>线性纵向 ：               布局内所有的控件都被组织在同一列中。
-   	  </ol>
-            	<p>&nbsp;</p>
-            	<p>默认值为绝对布局，但绝对布局是简单的、简陋的布局方式，在不同分辨率的屏幕中效果会比较差，推荐根据布局实际情况选择子控件布局方式。</p>
-    	<p>&nbsp;</p>
-    </div>
+    
     <h3>特性</h3>
     <div class="desc">
-   	  <div descimg><img src="img/3-3-10-img-02.png" alt="" /></div>
+   	  <div descimg><img src="img/3-3-17-img-02.png" alt="" /></div>
  
         	<h4>模拟裁剪</h4>
             <div class="desc">
@@ -137,14 +143,8 @@
               
             
             </div>
-             <h4>滑动方向</h4>
-            <div class="desc">
-              <p>&nbsp;</p>
-              <p>设置默认的滑动方向。Vertical：垂直方向 / Horizontal：水平方向
-              .</p>
-              <p>&nbsp;</p>
-      </div>
-         <h4>开启回弹</h4>
+           
+      <h4>开启回弹</h4>
             <div class="desc">
               <p>&nbsp;</p>
               <p>设置拖拽层是否开启回弹效果。若开启，拖拽层的内容将能够被拖动至脱离拖拽层边界。</p>
