@@ -56,6 +56,105 @@
             	<p>默认值为绝对布局，但绝对布局是简单的、简陋的布局方式，在不同分辨率的屏幕中效果会比较差，推荐根据布局实际情况选择子控件布局方式。</p>
     	<p>&nbsp;</p>
     </div>
+	 <h3>控件布局</h3>
+    <div class="desc">
+    	<p>&nbsp;</p>
+    	<h4>绝对布局模式</h4>
+        <div>
+          <h5>百分比</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>设置是否开启百分比模式 。</p>
+            <p>&nbsp;</p>
+          </div>
+            <h5>坐标</h5>
+          <div>
+            <p>设置控件的位置，单位为像素。</p>
+            <ul>
+            <li>X：设置控件的坐标X值</li>
+            <li>Y：设置控件的坐标Y值</li>
+            </ul>
+            <p>&nbsp;</p>
+          </div>
+            <h5>比例（%）</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>设置控件的位置，值相对于父控件尺寸的百分比。</p>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+      <h4>相对布局模式</h4>
+        <div>
+          <h5>停靠</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>设置控件的停靠对象，默认为父控件，还可以选择和控件本身没有布局关系的同级控件。</p>
+            <p>&nbsp;</p>
+          </div>
+          <h5>停靠父对象</h5>
+          <div>
+            <p>&nbsp;</p>
+            <ol>
+            <li>横向对齐：设置控件水平方向上的对齐方式，依次为&ldquo;左边&rdquo;、&ldquo;居中&rdquo;、&ldquo;右边&rdquo;。</li>
+            <li>纵向对齐：设置控件竖直方向上的对齐方式，依次为&ldquo;上边&rdquo;、&ldquo;居中&rdquo;、&ldquo;下边&rdquo;。</li>
+            </ol>
+            <p>&nbsp;</p>
+          </div>
+          <h5>停靠同级对象</h5>
+          <div>
+            <p>&nbsp;</p>
+            <ol>
+            <li>停靠边界：设置相对于停靠对象的相对边界，当前控件将会紧贴着停靠对象的上下左右之中的一个边。</li>
+            <li>横向对齐：设置控件水平方向上的对齐方式，依次为&ldquo;左边&rdquo;、&ldquo;居中&rdquo;、&ldquo;右边&rdquo;。（仅在停靠边界为&rdquo;上&ldquo;或者&rdquo;下&ldquo;时可以使用）</li>
+            <li>纵向对齐：设置控件竖直方向上的对齐方式，依次为&ldquo;上边&rdquo;、&ldquo;居中&rdquo;、&ldquo;下边&rdquo;。（仅在停靠边界为&rdquo;左&ldquo;或者&rdquo;右&ldquo;时可以使用）</li>
+            </ol>
+            <p>&nbsp;</p>
+          </div>
+          <h5>边缘</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>设置控件相对于停靠位置的位移。单位为像素。</p>
+            <p>注意：值只在特定的情况下设置</p>
+            <p>&nbsp;</p>
+          </div>
+          
+        </div>
+   	 </div>
+      <h4>线性横向布局模式</h4>
+        <div> 
+             <h5>纵向布局</h5>
+             <div>
+               <p>&nbsp;</p>
+               <p>设置控件竖直方向上的对齐方式，依次为&ldquo;上边&rdquo;、&ldquo;居中&rdquo;、&ldquo;下边&rdquo;。（仅在停靠边界为&rdquo;左&ldquo;或者&rdquo;右&ldquo;时可以使用）</p>
+               <p>&nbsp;</p>
+              </div>
+              
+                 <h5>边缘</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>设置控件相对于停靠位置的位移。单位为像素。</p>
+            <p>注意：值只在特定的情况下设置</p>
+            <p>&nbsp;</p>
+          </div>
+            </div>
+     
+      <h4>线性纵向布局模式</h4>
+        <div>
+          <h5>横向布局</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>设置控件水平方向上的对齐方式，依次为&ldquo;左边&rdquo;、&ldquo;居中&rdquo;、&ldquo;右边&rdquo;。（仅在停靠边界为&rdquo;上&ldquo;或者&rdquo;下&ldquo;时可以使用）</p>
+            <p>&nbsp;</p>
+          </div>
+             <h5>边缘</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>设置控件相对于停靠位置的位移。单位为像素。</p>
+            <p>注意：值只在特定的情况下设置</p>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+      
     <h3>特性</h3>
     <div class="desc">
    	  <div descimg><img src="img/3-3-10-img-02.png" alt="" /></div>
@@ -155,7 +254,7 @@
     </div>
   
 </div> 
-   <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp;版本v1.1.0 </div>
+   <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp;版本v1.2.0.0 </div>
 </div>
 </body>
 </html>

@@ -85,11 +85,10 @@
           <h5>停靠同级对象</h5>
           <div>
             <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
             <ol>
-            <li>横向对齐：设置控件水平方向上的对齐方式，依次为&ldquo;左边&rdquo;、&ldquo;居中&rdquo;、&ldquo;右边&rdquo;。</li>
-            <li>纵向对齐：设置控件竖直方向上的对齐方式，依次为&ldquo;上边&rdquo;、&ldquo;居中&rdquo;、&ldquo;下边&rdquo;。</li>
+            <li>停靠边界：设置相对于停靠对象的相对边界，当前控件将会紧贴着停靠对象的上下左右之中的一个边。</li>
+            <li>横向对齐：设置控件水平方向上的对齐方式，依次为&ldquo;左边&rdquo;、&ldquo;居中&rdquo;、&ldquo;右边&rdquo;。（仅在停靠边界为&rdquo;上&ldquo;或者&rdquo;下&ldquo;时可以使用）</li>
+            <li>纵向对齐：设置控件竖直方向上的对齐方式，依次为&ldquo;上边&rdquo;、&ldquo;居中&rdquo;、&ldquo;下边&rdquo;。（仅在停靠边界为&rdquo;左&ldquo;或者&rdquo;右&ldquo;时可以使用）</li>
             </ol>
             <p>&nbsp;</p>
           </div>
@@ -97,6 +96,7 @@
           <div>
             <p>&nbsp;</p>
             <p>设置控件相对于停靠位置的位移。单位为像素。</p>
+            <p>注意：值只在特定的情况下设置</p>
             <p>&nbsp;</p>
           </div>
           
@@ -104,20 +104,35 @@
    	 </div>
       <h4>线性横向布局模式</h4>
         <div> 
-             <h5>比例（%）</h5>
-              <div>
-                <p>&nbsp;</p>
-                <p>设置控件的位置，值相对于父控件尺寸的百分比。</p>
-                <p>&nbsp;</p>
+             <h5>纵向布局</h5>
+             <div>
+               <p>&nbsp;</p>
+               <p>设置控件竖直方向上的对齐方式，依次为&ldquo;上边&rdquo;、&ldquo;居中&rdquo;、&ldquo;下边&rdquo;。（仅在停靠边界为&rdquo;左&ldquo;或者&rdquo;右&ldquo;时可以使用）</p>
+               <p>&nbsp;</p>
               </div>
+              
+                 <h5>边缘</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>设置控件相对于停靠位置的位移。单位为像素。</p>
+            <p>注意：值只在特定的情况下设置</p>
+            <p>&nbsp;</p>
+          </div>
             </div>
      
       <h4>线性纵向布局模式</h4>
         <div>
-          <h5>比例（%）</h5>
+          <h5>横向布局</h5>
           <div>
             <p>&nbsp;</p>
-            <p>设置控件的位置，值相对于父控件尺寸的百分比。</p>
+            <p>设置控件水平方向上的对齐方式，依次为&ldquo;左边&rdquo;、&ldquo;居中&rdquo;、&ldquo;右边&rdquo;。（仅在停靠边界为&rdquo;上&ldquo;或者&rdquo;下&ldquo;时可以使用）</p>
+            <p>&nbsp;</p>
+          </div>
+             <h5>边缘</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>设置控件相对于停靠位置的位移。单位为像素。</p>
+            <p>注意：值只在特定的情况下设置</p>
             <p>&nbsp;</p>
           </div>
         </div>
@@ -174,7 +189,7 @@
     </div>
   
 </div> 
-   <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp;版本v1.1.0 </div>
+   <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp;版本v1.2.0.0 </div>
 </div>
 </body>
 </html>
