@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>文本按钮[UITextButton]</title>
+<title>分页层[UIPageView]</title>
 <meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D游戏引擎,游戏开发工具" />
 <meta name="Description" content="CocoStudio帮助手册,CocoStudio中文手册,游戏编辑器使用帮助,CocoStudio用户指南"/>
 <link type="text/css" rel="stylesheet" href="style/style.css"  />
@@ -10,23 +10,24 @@
 <body id="split">
 <div id="content">
   <div rel="aboutXMLDoc">
-    <h2>文本按钮[UITextButton]</h2>
+    <h2>分页层[UIPageView]</h2>
     
     <h3>图标</h3>
     <div class="desc">
-    <div class="descimg"><img src="img/3-3-13-img-01.png" alt="" /></div>
+    <div class="descimg"><img src="img/3-3-17-img-01.png" alt="" /></div>
     </div>
     <h3>描述</h3>
     <div class="desc">
-		<p>UITextButton的类是一个UIWidget子类，它实现了在触摸屏上的文本按钮。<br />
+		<p>UIPageView的类是一个UIWidget子类，它实现了在触摸屏上的分页层。<br />
 		</p>
 		<div class="longdesc">
-		  <p>触摸一个文本按钮时拦截事件和动作消息发送到目标对象时。设定的目标和行动方法都继承自UIWidget。该控件提供了方法来设置文本按钮的显示宽高，字号，字体，对齐方式，文本内容，是否缩放等属性。</p>
+		  <p>触摸一个滚动层时拦截事件和动作消息发送到目标对象时。设定的目标和行动方法都继承自UIWidget。该控件提供了方法来设置滚动层的裁切，显示区域宽高，滚动区域宽高，背景色透明度，填充颜色，图片资源等属性。</p>
 		  <p>&nbsp;</p>
 			
 		</div>
     </div>
-	<h3>九宫格属性</h3>
+  
+    <h3>九宫格属性</h3>
     <div class="desc">
     	<p>&nbsp;</p>
     	<p>请查看<a href="3-3-16UIEditor-General-Property.html#ninebox">UI控件九宫格属性页</a></p>
@@ -101,7 +102,7 @@
           </div>
           
         </div>
-  
+   	 </div>
       <h4>线性横向布局模式</h4>
         <div> 
              <h5>纵向布局</h5>
@@ -136,58 +137,70 @@
             <p>&nbsp;</p>
           </div>
         </div>
-       	 </div>
+      
     <h3>特性</h3>
     <div class="desc">
-    	<div descimg><img src="img/3-3-13-img-02.png" alt="" /></div>
-    	
-        	<h4>正常状态</h4>
+   	  <div descimg><img src="img/3-3-18-img-02.png" alt="" /></div>
+ 
+        	
+                       <h4>文件</h4>
             <div class="desc">
               <p>&nbsp;</p>
-              <p>配置一张文本按钮控件默认状态下的图片（png,jpg），控件默认状态下显示。</p>
-              <p>&nbsp;</p>
-            </div>
-          <h4>按下状态</h4>
+              <p>配置一张默认下的图片（png,jpg），控件默认状态下显示。</p>
+              <p>.</p>
+        </div>
+         
+ 
+         
+          <h4>背景色透明度</h4>
             <div class="desc">
               <p>&nbsp;</p>
-              <p>配置一张文本按钮控件按下状态下的图片（png,jpg），控件按下状态下显示。</p>
+              <p>1. 设置背景颜色的透明度，范围0-255。 0表示完全透明，255表示不透明。</p>
               <p>&nbsp;</p>
-          </div>
+      </div>
            
-           <h4>禁用状态</h4>
+           <h4>填充颜色</h4>
             <div class="desc">
-              <p>&nbsp;</p>
-              <p>配置一张文本按钮控件禁用状态下的图片（png,jpg），控件禁用状态下显示。</p>
-              <p>&nbsp;</p>
-       </div>
-             <h4>字体</h4>
-            <div class="desc">
-              <p>&nbsp;</p>
-              <p>现在只支持宋体，黑体，微软雅黑</p>
-              <p>&nbsp;</p>
-       </div>
-             <h4>文本颜色</h4>
-            <div class="desc">
-              <p>&nbsp;</p>
-              <p>设置文本按钮中文本的颜色值。</p>
-              <p>&nbsp;</p>
-       </div>
-             <h4>字号</h4>
-            <div class="desc">
-              <p>&nbsp;</p>
-              <p>文本按钮中文本的字体大小</p>
-              <p>&nbsp;</p>
-       </div>
-             <h4>文本</h4>
-            <div class="desc">
-              <p>&nbsp;</p>
-              <p>文本按钮中显示的文本内容。</p>
-              <p>&nbsp;</p>
-            </div>
-           
-            
-      
+         
+                	<h5>无颜色</h5>
+                    <div class="desc">
+                      <p>无颜色状态下，控件背景色变成无</p>
+                      <p>&nbsp;</p>
     </div>
+                    <h5>单色</h5> <div class="desc">
+                      <p>设置背景色的颜色（RGB）</p>
+                      <p>&nbsp;</p>
+            </div>
+                    <h5>渐变色</h5> 
+                    <div>
+					<ol>
+                    	<li>开始色</li>
+                         <div class="desc">
+                           <p>设置渐变色的起点颜色</p>
+                           <p>&nbsp;</p>
+                     </div>
+                        <li>结束色</li>
+                          <div class="desc">
+                            <p>设置渐变色的结束颜色</p>
+                            <p>&nbsp;</p>
+                      </div>
+                        <li>X</li>
+                          <div class="desc">
+                            <p>向量x</p>
+                            <p>&nbsp;</p>
+                      </div>
+                        <li>Y</li>
+                          <div class="desc">
+                            <p>向量Y</p>
+                            <p>&nbsp;</p>
+                          </div>
+                    </ol>
+					</div>
+              
+            
+            </div>
+           
+     </div>
   
 </div> 
    <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp;版本v1.2.0.0 </div>
