@@ -37,15 +37,25 @@
 		<div class="longdesc">
 			
 			<pre class="code">
-//从导出文件加载场景
-CCScene * newscene  = CCScene::create();
-CCNode*pNode=SceneReader::sharedSceneReader()->createNodeWithJsonFile("SceneEditorTest/SceneEditorTest.json");
-
-//切换场景
-&nbsp;CCDirector::sharedDirector()-&gt;replaceScene(newscene);&nbsp;
-
-//获取场景内的组件
-&nbsp;CCComAudio *pAudio = (CCComAudio*)(pNode-&gt;getComponent(&quot;Audio&quot;));&nbsp;</pre>
+ //常见一个新的场景
+ CCScene * newscene  = CCScene::create(); 
+ //加载导出文件并初始化根节点
+ CCNode *pNode = CCJsonReader::sharedJsonReader()->createNodeWithJsonFile("SceneEditorTest/SceneEditorTest.json"); 
+ 
+ //通过tag获取音频组件
+ CCComAudio *pAudio = (CCComAudio*)(pNode->getComponent("Audio")); 
+ //播放音频
+ pAudio->playBackgroundMusic(pAudio->getFile(), pAudio->getIsLoop()); 
+ //获取comrender组件
+ CCComRender *pFishRender = (CCComRender*)(pNode->getChildByTag(10010)->getComponent( "butterFlyFish")); 
+ //转换为armature
+ CCArmature *pButterFlyFish= (CCArmature *)(pFishRender->getRender()); 
+ pButterFlyFish->getAnimation()->playByIndex(0); 
+ //将根节点添加到新场景
+ newscene->addChild(pNode, 0, 1); 
+ //切换场景
+ CCDirector::sharedDirector()->replaceScene(newscene); 
+</pre>
 			
 		</div>
     </div>

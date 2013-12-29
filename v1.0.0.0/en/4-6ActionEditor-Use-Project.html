@@ -35,11 +35,22 @@
 		<div class="longdesc">
 			
 			<pre class="code">
+//async loading export file
 CCArmatureDataManager::sharedArmatureDataManager()->addArmatureFileInfo("Cowboy0.png","Cowboy0.plist","Cowboy.ExportJson");
+
+//Creat armature by name
 CCArmature *armature = CCArmature::create("Cowboy");
+
+//play animation by animation index
 armature->getAnimation()->playByIndex(0);
+
+//Change Permissions
 armature->setScale(0.5f);
+
+//Set the armature position
 armature->setPosition(ccp(visibleSize.width * 0.5, visibleSize.height * 0.5));
+
+//add to the current scene
 this->addChild(armature,2)
 </pre>
 			

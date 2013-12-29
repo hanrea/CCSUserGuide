@@ -40,9 +40,25 @@
 		<div class="longdesc">
 			
 			<pre class="code">
-CCScene * newscene  = CCScene::create();
-CCNode*pNode=CCJsonReader::sharedJsonReader()->createNodeWithJsonFile("SceneEditorTest/SceneEditorTest.json");
-</pre>
+ //Creat new scene
+ CCScene * newscene  = CCScene::create(); 
+ //Creat root node frome export file by scene editor.
+ CCNode *pNode = CCJsonReader::sharedJsonReader()->createNodeWithJsonFile("SceneEditorTest/SceneEditorTest.json"); 
+ 
+ //Get a audio component by name
+ CCComAudio *pAudio = (CCComAudio*)(pNode->getComponent("Audio")); 
+ //paly audio
+ pAudio->playBackgroundMusic(pAudio->getFile(), pAudio->getIsLoop()); 
+ //Get a ComRender component by tag
+ CCComRender *pFishRender = (CCComRender*)(pNode->getChildByTag(10010)->getComponent( "butterFlyFish")); 
+ //convert to armature
+ CCArmature *pButterFlyFish= (CCArmature *)(pFishRender->getRender()); 
+ pButterFlyFish->getAnimation()->playByIndex(0); 
+ //add the node to new scene
+ newscene->addChild(pNode, 0, 1); 
+ //replace scene
+ CCDirector::sharedDirector()->replaceScene(newscene); 
+ </pre>
 			
 		</div>
     </div>
