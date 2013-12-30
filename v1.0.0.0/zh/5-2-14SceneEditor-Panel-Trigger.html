@@ -16,7 +16,7 @@
     <div class="desc">
       <p><img src="img/5-2-14-img-01.png" alt="" /></p>
       <p>&nbsp;</p>
-      <p>CocoStudio 1.2.0.0版本以后在场景编辑器中新加入了触发器功能。</p>
+      <p>CocoStudio 1.2.0.0版本在场景编辑器中新加入了触发器功能。</p>
       <p>触发器是一种通过事件触发机制，在特定的事件被触发的时候自动执行自己预先定义的动作或者功能。</p>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
@@ -36,7 +36,7 @@
     	
       <p>&nbsp;</p>
       <p>选择触发当前触发器的触发条件。</p>
-      <p>事件默认包含8种条件，分别是SceneOnEnter、SceneOnExit、SceneInit、SceneUpdate；TouchBegan、TouchMoved、TouchEnded、TouchCancelled。这些事件分别为场景状态更新和触摸事件触发。除了这些默认事件，您也可以根据您的需要定义自己的事件。</p>
+      <p>事件默认包含8种条件，分别是SceneOnEnter、SceneOnExit、SceneInit、SceneUpdate；TouchBegan、TouchMoved、TouchEnded、TouchCancelled。除了这些默认事件，您也可以根据您的需要定义自己的事件。</p>
       <p>根据要求修改$User\Documents\CocoStudio\Samples\Trigger\Trigger\Event.xml文件，即可扩展自己的事件。其中&ldquo;ClassName&rdquo;属性表示在程序中的方法名，&ldquo;Name&rdquo;属性是在编辑器中显示的事件名称。</p>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
@@ -45,7 +45,7 @@
     <div>
       <p>&nbsp;</p>
       <p>条件是用来判断触发当前事件时是否执行预订的动作。只有当条件成立的时候才会继续执行预订的动作。</p>
-      <p>当不包含任何条件的时候，表示条件永远为真，动作会一直被触发。</p>
+      <p>当不包含任何条件的时候，动作会被直接触发。</p>
       <p>当包含多个条件的时候，条件之间的关系为并，只有当所有的条件都是符合的时候才能够执行预订的动作。</p>
       <p>编辑器默认提供了TimeElapsedTo、ActionState、IsNodeInRect、IsNodeVisible四种条件，除了这些默认条件，您也可以根据您的需要定义自己的事件。更具要求修改$User\Documents\CocoStudio\Samples\Trigger\Trigger\Condition.xml文件，即可扩展自己的事件。其中&ldquo;ClassName&rdquo;属性表示在程序中的方法名，&ldquo;Name&rdquo;属性是在编辑器中显示的条件名称。</p>
       <p>&nbsp;</p>
