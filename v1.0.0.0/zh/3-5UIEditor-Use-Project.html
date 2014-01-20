@@ -39,14 +39,20 @@
 			
 			<pre class="code">
 //根据文件创建一个界面
-UILayer* ul =UILayer::create();
-ul->addWidget(CCUIHELPER->createWidgetFromJsonFile("UIEditorTest_1.json"));
+TouchGroup* ul =TouchGroup::create();
+ul->addWidget(GUIReader::shareReader()->widgetFromJsonFile("UIEditorTest_1.json"));
 </pre>
 
 	<pre class="code">
 //根据tag获取一个控件
 
 ul->getChildByTag(1);
+
+
+//Play UI Action
+ActionManager::shareManager()->getActionByName("DemoHead_UI.json","Animation0")->play();
+
+
 </pre>
 			
 			

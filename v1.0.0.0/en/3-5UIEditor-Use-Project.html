@@ -39,14 +39,18 @@
 			
 			<pre class="code">
 //Creat new ui
-UILayer* ul =UILayer::create();
-ul->addWidget(CCUIHELPER->createWidgetFromJsonFile("UIEditorTest_1.json"));
+TouchGroup* ul =TouchGroup::create();
+ul->addWidget(GUIReader::shareReader()->widgetFromJsonFile("UIEditorTest_1.json"));
 </pre>
 
 <pre class="code">
 //Get widget by tag
 
 ul->getChildByTag(1);
+
+//Play UI Action
+ActionManager::shareManager()->getActionByName("DemoHead_UI.json","Animation0")->play();
+
 </pre>
 			
 		</div>

@@ -37,19 +37,19 @@
 		<div class="longdesc">
 			
 			<pre class="code">
- //常见一个新的场景
+ 		 //常见一个新的场景
  CCScene * newscene  = CCScene::create(); 
  //加载导出文件并初始化根节点
- CCNode *pNode = CCJsonReader::sharedJsonReader()->createNodeWithJsonFile("SceneEditorTest/SceneEditorTest.json"); 
+ CCNode *pNode = SceneReader::sharedSceneReader()->createNodeWithSceneFile("SceneEditorTest/SceneEditorTest.json"); 
  
  //通过tag获取音频组件
  CCComAudio *pAudio = (CCComAudio*)(pNode->getComponent("Audio")); 
  //播放音频
- pAudio->playBackgroundMusic(pAudio->getFile(), pAudio->getIsLoop()); 
+ pAudio->playBackgroundMusic(pAudio->getFile(), pAudio->isLoop()); 
  //获取comrender组件
  CCComRender *pFishRender = (CCComRender*)(pNode->getChildByTag(10010)->getComponent( "butterFlyFish")); 
  //转换为armature
- CCArmature *pButterFlyFish= (CCArmature *)(pFishRender->getRender()); 
+ CCArmature *pButterFlyFish= (CCArmature *)(pFishRender->getNode()); 
  pButterFlyFish->getAnimation()->playByIndex(0); 
  //将根节点添加到新场景
  newscene->addChild(pNode, 0, 1); 

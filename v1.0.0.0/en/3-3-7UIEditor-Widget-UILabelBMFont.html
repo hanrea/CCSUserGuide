@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Label atlas[UILabelAtlas]</title>
+<title>Custom Fonts[UILabelBMFont]</title>
 <meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D game engine, game development" />
 <meta name="Description" content="CocoStudio Help,CocoStudio Manual,CocoStudio Guide"/>
 <link type="text/css" rel="stylesheet" href="style/style.css"  />
@@ -10,16 +10,16 @@
 <body id="split">
 <div id="content">
   <div rel="aboutXMLDoc">
-    <h2>Label atlas[UILabelAtlas]</h2>
+    <h2>Custom Fonts[UILabelBMFont]</h2>
     <h3>Icon</h3>
     <div class="desc">
-    <div class="descimg"><img src="img/3-3-6-img-01.png" alt="" /></div>
+    <div class="descimg"><img src="img/3-3-7-img-01.png" alt="" /></div>
     </div>
     <h3>Description</h3>
     <div class="desc">
-		<p>UILabelAtlas is a subclass of UIWidget that implements a label atlas in the touch screen.</p>
+		<p>The UILabelBMFont subclass implements custom fonts in the touch screen. The UILabelBMFont subclass is a subclass of UIWidget.</p>
 		<div class="longdesc">
-		  <p>The widget provides methods to set tag image, label first char, label char width, label char height, text content and other attributes.</p>
+		  <p>The widget provides methods to set font file, text content and other attributes.</p>
 		  <p>&nbsp;</p>
 			
 		</div>
@@ -27,13 +27,13 @@
 	<h3>Size And Mode</h3>
     <div class="desc">
     	<p>&nbsp;</p>
-    	<p>More... <a href="3-3-16UIEditor-General-Property.html">3x3 grids</a></p>
+    	<p>For more information, see <a href="3-3-16UIEditor-General-Property.html">3x3 grids</a>.</p>
     	<p>&nbsp;</p>
     </div>
     <h3>Common properties</h3>
     <div class="desc">
     	<p>&nbsp;</p>
-    	<p>More... <a href="3-3-16UIEditor-General-Property.html#properties">Common properties</a></p>
+    	<p>For more information, see <a href="3-3-16UIEditor-General-Property.html#properties">Common properties</a>.</p>
     	<p>&nbsp;</p>
     </div>
     <h3>Widgets Layout</h3>
@@ -135,39 +135,28 @@ relative to the dock.The unit is pixel.</p>
     </div>
     <h3>Feature</h3>
     <div class="desc">
-    	<div descimg><img src="img/3-3-6-img-02.png" alt="" /></div>
+    	<div descimg><img src="img/3-3-7-img-02.png" alt="" /></div>
     	
-        	<h4>Tag image</h4>
+        	<h4>FNT font file</h4>
             <div class="desc">
               <p>&nbsp;</p>
-              <p>Configures a tag image and controls the default display.</p>
-              <p>&nbsp;</p>
-        </div>
-            <h4>Label first char</h4>
-            <div class="desc">
-              <p>&nbsp;</p>
-              <p>Maps the atlas to the ASCII table according to the first character.</p>
-              <p>&nbsp;</p>
-        </div>
-            <h4>Label char width</h4>
-            <div class="desc">
-              <p>&nbsp;</p>
-              <p>Sets the width of the label display area.</p>
+              <p>Configures a custom font control support font file（.fnt）.</p>
               <p>&nbsp;</p>
           </div>
-			<h4>Label char height</h4>
-            <div class="desc">
-              <p>&nbsp;</p>
-              <p>Sets the height of the label display area.</p>
-              <p>&nbsp;</p>
-        </div>
-            <h4>Text</h4>
+           <div class="warning">
+             <p>&nbsp;</p>
+             <p>Note: When you configure the font file, font files in the resource area and their corresponding images are located in the same directory level.</p>
+             <p>&nbsp;</p>
+           </div>
+        <h4>Text</h4>
             <div class="desc">
               <p>&nbsp;</p>
               <p>The label that is displayed.</p>
               <p>&nbsp;</p>
             </div>
            
+           
+   	 
     </div>
   
 </div> 
