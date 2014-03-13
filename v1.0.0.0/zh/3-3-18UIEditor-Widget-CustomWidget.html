@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>自定义控件[CustomWidget]</title>
+<meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D游戏引擎,游戏开发工具" />
+<meta name="Description" content="CocoStudio帮助手册,CocoStudio中文手册,游戏编辑器使用帮助,CocoStudio用户指南"/>
+<link type="text/css" rel="stylesheet" href="style/style.css"  />
+</head>
+<body id="split">
+<div id="content">
+  <div rel="aboutXMLDoc">
+    <h2>自定义控件[CustomWidget]</h2>
+    
+    <h3>图标</h3>
+    <div class="desc">
+    <div class="descimg"><img src="img/3-3-18-img-01.png" alt="" /></div>
+    </div>
+    <h3>描述</h3>
+    <div class="desc">
+		<p>自定义控件是通过扩展Widget的方式制作自定义的控件，通过给widget添加新的属性及方法创建出自定义控件，关于自定义控件扩展请参考：<a href="">http://github.com/cocos-doc</a><br />
+		
+		
+    </div>
+  
+    <h3>尺寸和模式</h3>
+    <div class="desc">
+    	<p>&nbsp;</p>
+    	<p>请查看<a href="3-3-16UIEditor-General-Property.html">尺寸和模式</a></p>
+    	<p>&nbsp;</p>
+    </div>
+    <h3>常规属性</h3>
+    <div class="desc">
+    	<p>&nbsp;</p>
+    	<p>请查看<a href="3-3-16UIEditor-General-Property.html#properties">UI控件常规属性页</a></p>
+    	<p>&nbsp;</p>
+    </div>
+     <h3>控件布局</h3>
+    <div class="desc">
+    	<p>&nbsp;</p>
+    	<h4>绝对布局模式</h4>
+        <div>
+          <h5>百分比</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>设置是否开启百分比模式 。</p>
+            <p>&nbsp;</p>
+          </div>
+            <h5>坐标</h5>
+          <div>
+            <p>设置控件的位置，单位为像素。</p>
+            <ul>
+            <li>X：设置控件的坐标X值</li>
+            <li>Y：设置控件的坐标Y值</li>
+            </ul>
+            <p>&nbsp;</p>
+          </div>
+            <h5>比例（%）</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>设置控件的位置，值相对于父控件尺寸的百分比。</p>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+      <h4>相对布局模式</h4>
+        <div>
+          <h5>停靠</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>设置控件的停靠对象，默认为父控件，还可以选择和控件本身没有布局关系的同级控件。</p>
+            <p>&nbsp;</p>
+          </div>
+          <h5>停靠父对象</h5>
+          <div>
+            <p>&nbsp;</p>
+            <ol>
+            <li>横向对齐：设置控件水平方向上的对齐方式，依次为&ldquo;左边&rdquo;、&ldquo;居中&rdquo;、&ldquo;右边&rdquo;。</li>
+            <li>纵向对齐：设置控件竖直方向上的对齐方式，依次为&ldquo;上边&rdquo;、&ldquo;居中&rdquo;、&ldquo;下边&rdquo;。</li>
+            </ol>
+            <p>&nbsp;</p>
+          </div>
+          <h5>停靠同级对象</h5>
+          <div>
+            <p>&nbsp;</p>
+            <ol>
+            <li>停靠边界：设置相对于停靠对象的相对边界，当前控件将会紧贴着停靠对象的上下左右之中的一个边。</li>
+            <li>横向对齐：设置控件水平方向上的对齐方式，依次为&ldquo;左边&rdquo;、&ldquo;居中&rdquo;、&ldquo;右边&rdquo;。（仅在停靠边界为&rdquo;上&ldquo;或者&rdquo;下&ldquo;时可以使用）</li>
+            <li>纵向对齐：设置控件竖直方向上的对齐方式，依次为&ldquo;上边&rdquo;、&ldquo;居中&rdquo;、&ldquo;下边&rdquo;。（仅在停靠边界为&rdquo;左&ldquo;或者&rdquo;右&ldquo;时可以使用）</li>
+            </ol>
+            <p>&nbsp;</p>
+          </div>
+          <h5>边缘</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>设置控件相对于停靠位置的位移。单位为像素。</p>
+            <p>注意：值只在特定的情况下设置</p>
+            <p>&nbsp;</p>
+          </div>
+          
+        </div>
+   	 </div>
+      <h4>线性横向布局模式</h4>
+        <div> 
+             <h5>纵向布局</h5>
+             <div>
+               <p>&nbsp;</p>
+               <p>设置控件竖直方向上的对齐方式，依次为&ldquo;上边&rdquo;、&ldquo;居中&rdquo;、&ldquo;下边&rdquo;。（仅在停靠边界为&rdquo;左&ldquo;或者&rdquo;右&ldquo;时可以使用）</p>
+               <p>&nbsp;</p>
+              </div>
+              
+                 <h5>边缘</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>设置控件相对于停靠位置的位移。单位为像素。</p>
+            <p>注意：值只在特定的情况下设置</p>
+            <p>&nbsp;</p>
+          </div>
+            </div>
+     
+      <h4>线性纵向布局模式</h4>
+        <div>
+          <h5>横向布局</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>设置控件水平方向上的对齐方式，依次为&ldquo;左边&rdquo;、&ldquo;居中&rdquo;、&ldquo;右边&rdquo;。（仅在停靠边界为&rdquo;上&ldquo;或者&rdquo;下&ldquo;时可以使用）</p>
+            <p>&nbsp;</p>
+          </div>
+             <h5>边缘</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>设置控件相对于停靠位置的位移。单位为像素。</p>
+            <p>注意：值只在特定的情况下设置</p>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+      
+    <h3>特性</h3>
+    <div class="desc">
+        <h4>文件</h4>
+            <div class="desc">
+              <p>&nbsp;</p>
+              <p>配置一张默认下的图片（png,jpg），控件默认状态下显示。</p>
+              <p>&nbsp;</p>
+        </div>
+     </div>
+  
+</div> 
+   <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp;版本v1.2.0.0 </div>
+</div>
+</body>
+</html>
