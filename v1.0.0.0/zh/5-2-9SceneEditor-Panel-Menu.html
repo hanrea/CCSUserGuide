@@ -26,68 +26,117 @@
     	
         	<h4>文件(Alt+F)</h4>
             <div>
-              <img src="img/5-2-9-img-02.png" alt="" />
-            <h5>新建项目(Ctrl+N)</h5>
-            <div>
-             
-              <img src="img/5-2-9-img-03.png" alt="" />
-              <p>&nbsp;</p>
-              <p>创建一个新的Scene项目，如果当前有打开的项目，软件会提示是否保存当前项目。新建项目时需要设置项目名称和项目路径。 </p>
-              <p>&nbsp;</p>
-              <div class="warning">
-              	<p>注意：</p>
-              	<p>1：创建项目名称，文件名中不能有下列符号："？"、"、"、"╲"、"*"、"""、"""、"<"、">"、"|"。              </p>
-              	<p>2：.XP系统下请不要将项目创建在桌面上，其他路径均可。</p>
-              	<p> 3：最好不要把工程建在系统安全目录下。</p>
-              	<p>&nbsp;</p>
-              </div>
-            </div>
+				<img src="img/5-2-9-img-02.png" alt="" />
+				<h5>新建项目(Ctrl+N)</h5>
+				<div>
+					<ul>
+						<li>新建游戏项目</li>
+						<div>
+							
+						  <p>&nbsp;</p>
+						  <p>创建一个新的游戏项目，内容包含初始化的Cocos2d-x 版本项目。游戏项目可以管理所有的UI项目、动画项目、场景项目。 </p>
+						  <p>&nbsp;</p>
+						  
+						</div>
+						
+						 <li>新建UI项目</li>
+						<div>
+							
+						  <p>&nbsp;</p>
+						  <p>创建一个新的UI项目，创建后的内容在项目文件夹下的CocoStduio文件夹下的ccsprojs目录内。 </p>
+						  <p>&nbsp;</p>
+						</div>
+						
+						<li>新建动画项目</li>
+						<div>
+							
+						  <p>&nbsp;</p>
+						  <p>创建一个新的动画项目，创建后的内容在项目文件夹下的CocoStduio文件夹下的ccsprojs目录内。 </p>
+						  <p>&nbsp;</p>
+						</div>
+						
+						<li>新建场景项目</li>
+						<div>
+							
+						  <p>&nbsp;</p>
+						  <p>创建一个新的场景项目，创建后的内容在项目文件夹下的CocoStduio文件夹下的ccsprojs目录内。 </p>
+						  <p>&nbsp;</p>
+						</div>
+						
+						<div class="warning">
+						  <p>&nbsp;</p>
+						  <p>	注意：创建UI、动画、场景项目之前必须存在一个游戏项目。 </p>
+						  <p>&nbsp;</p>
+						
+						</div>
+					</ul>
+				</div>
+					
               <h5>打开项目(Ctrl+O)</h5>
-            <div>
-              <p>&nbsp;</p>
-              <p>打开已有的项目。</p>
-              <p>&nbsp;</p>
-            </div>
+					<div>
+					  <p>&nbsp;</p>
+					  <p>打开已有的场景或游戏项目。如果打开的是场景项目，编辑器将会把场景项目升级为游戏项目。如果需要将场景项目导入到已有的游戏项目请您先打开已有的游戏项目并使用导入项目功能。</p>
+					  <p>&nbsp;</p>
+					</div>
               <h5>保存项目(Ctrl+S)</h5>
-            <div>
-              <p>&nbsp;</p>
-              <p>对当前正在编辑的项目进行保存操作。 </p>
-              <p>&nbsp;</p>
-            </div>
-              <h5>另存为(Ctrl+Shift+N)</h5>
-            <div>
-              <p>&nbsp;</p>
-              <p>&nbsp;</p>
-              <p>将当前项目另存为一个新的项目。</p>
-              <p>&nbsp;</p> <div class="warning">
-              	<p>注意：项目名称中不能有下列符号："？"、"、"、"╲"、"*"、"""、"""、"<"、">"、"|"。
-              项目名称尽量不要使用中文。</p>
-              	<p>&nbsp;</p>
-              </div>
-            </div>
+					<div>
+					  <p>&nbsp;</p>
+					  <p>对当前正在编辑的项目进行保存操作。 </p>
+					  <p>&nbsp;</p>
+					</div>
+              <h5>另存为(Ctrl+Shift+s)</h5>
+				<div>
+				  <p>&nbsp;</p>
+				  <p>&nbsp;</p>
+				  <p>将当前项目另存为一个新的游戏项目。</p>
+				  <p>&nbsp;</p> 
+					  <div class="warning">
+						<p>注意：项目名称中不能有下列符号："？"、"、"、"╲"、"*"、"""、"""、"<"、">"、"|"。
+					  项目名称尽量不要使用中文。</p>
+						<p>&nbsp;</p>
+					  </div>
+				</div>
               <h5>导出项目</h5>
-            <div>
-              <img src="img/5-4-img-02.png" alt="" />
-              <p>&nbsp;</p>
-              <p>将选中的画布导出为程序中可以使用的资源。 </p>
-              <p>&nbsp;</p>
-            </div>
-            
-               
-              <h5>导入资源</h5>
+				<div>
+					<h5>导出资源（Ctrl+E）</h5>
+						<div>
+						  <img src="img/5-4-img-02.png" alt="" />
+						  <p>&nbsp;</p>
+						  <p>导出当前游戏项目中使用的资源。 </p>
+						  <p>&nbsp;</p>
+						</div>
+				</div>
+               <h5>导入项目</h5>
+			   <div>
+					<ul>
+					  <li>导入UI工程 </li>
+						  <div>
+							<p>&nbsp;将一个已有的UI项目导入到当前游戏项目。 </p>
+						</div>
+					  <li>导入动画工程 </li>
+						  <div>
+							<p>&nbsp;将一个已有的动画项目导入到当前游戏项目。 </p>
+						</div>
+					 <li>导入场景工程 </li>
+						  <div>
+							<p>&nbsp;将一个已有的场景项目导入到当前游戏项目。 </p>
+						</div>
+					</ul>
+               </div>
+            <h5>导入资源</h5>
             <div>
               <p>导入文件 </p>
-              <div>
-              <p>1.选择磁盘中的文件进行导入，支持多选择导入。            	 </p>
-            	<p> 2.遇到同名文件时会提示同名，导入失败。</p>
-            	<p>&nbsp; </p>
-        </div>
+				  <div>
+				  <p>1.选择磁盘中的文件进行导入，支持多选择导入。</p>
+					<p> 2.遇到同名文件时会提示同名，导入失败。</p>
+					<p>&nbsp; </p>
+				</div>
               <p>导入文件夹 </p>
-              <div>
-                <p>1.选择磁盘中的文件夹进行导入。</p>
-            	<p>2.遇到同名文件夹时会提示同名，导入失败。</p>
-            	<p>&nbsp; </p>
-        </div>
+				  <div>
+					<p>1.选择磁盘中的文件夹进行导入。</p>
+					<p>2.遇到同名文件夹时会提示同名，导入失败。</p>
+					<p>&nbsp; </p>
+				</div>
             </div>
               
               <h5>退出(Alt+F4)</h5>
@@ -101,69 +150,89 @@
       
       	<h4>编辑(Alt+E)</h4>
             <div><img src="img/5-2-9-img-05.png" alt="" />
-<h5>撤销(Ctrl+Z)</h5>
-            <div>
-              <p>&nbsp;</p>
-              <p>撤销上一步操作。</p>
-              <p>&nbsp;</p>
-            </div>
+			<h5>撤销(Ctrl+Z)</h5>
+						<div>
+						  <p>&nbsp;</p>
+						  <p>撤销上一步操作。</p>
+						  <p>&nbsp;</p>
+						</div>
+						
+						<h5>重做(Ctrl+Y)</h5>
+						<div>
+						  <p>&nbsp;</p>
+						  <p>将撤销的操作恢复。</p>
+						  <p>&nbsp;</p>
+						</div>
+			</div>
             
-            <h5>重做(Ctrl+Y)</h5>
-            <div>
-              <p>&nbsp;</p>
-              <p>将撤销的操作恢复。</p>
-              <p>&nbsp;</p>
-            </div>
-            
-            
-            
-</div>
-            
-            	<h4>视图(Alt+V)</h4>
-            <div><img src="img/5-2-9-img-06.png" alt="" />
-<h5>对象结构</h5>
-            <div>
-              <p>&nbsp;</p>
-              <p>打开对象结构窗口。</p>
-              <p>&nbsp;</p>
-            </div>
-            
-            
-            <h5>属性</h5>
-            <div>
-              <p>&nbsp;</p>
-              <p>打开属性窗口。</p>
-              <p>&nbsp;</p>
-            </div>
-            	<h5>资源</h5>
-            <div>
-              <p>&nbsp;</p>
-              <p>打开资源窗口。</p>
-              <p>&nbsp;</p>
-            </div>
-            
-         
-            
-            <h5>输出</h5>
-            <div>
-              <p>&nbsp;</p>
-              <p>打开输出窗口。</p>
-              <p>&nbsp;</p>
-            </div>
-              <h5>起始页窗口</h5>
-            <div>
-              <p>&nbsp;</p>
-              <p>打开场景编辑器起始页面。</p>
-              <p>&nbsp;</p>
-            </div>
-            <h5>恢复所有窗口默认布局</h5>
-            <div>
-              <p>&nbsp;</p>
-              <p>将编辑器的窗口布局恢复到初始布局。</p>
-              <p>&nbsp;</p>
-            </div>
-            
-      </div>
+        <h4>视图（ALT+V）</h4>
+		<div> 
+			<h5>隐藏/显示标尺</h5>
+				<div>
+				  <p>&nbsp;</p>
+				  <p>切换渲染面板的标尺显示状态。</p>
+				  <p>&nbsp;</p>
+				</div>
+			<h5>清除参考线</h5>
+				<div>
+				  <p>&nbsp;</p>
+				  <p>将渲染面板中的参考线移除。</p>
+				  <p>&nbsp;</p>
+				</div>
+			<h5>锁定参考线</h5>
+				<div>
+				  <p>&nbsp;</p>
+				  <p>将渲染面板中的参考线锁定，锁定后的参考将不可移动。</p>
+				  <p>&nbsp;</p>
+				</div>
+			<h5>新建参考线</h5>
+				<div>
+				  <p>&nbsp;</p>
+				  <p>创建一个新的参考线。</p>
+				  <p>提示：可以通过拖拽标尺的方式快速创建参考线。</p>
+				</div>
+		</div>
+		
+		
+        <h4>窗口（ALT+W）</h4>
+				<div><img src="img/5-2-9-img-06.png" alt="" />
+				<h5>对象结构</h5>
+				<div>
+				  <p>&nbsp;</p>
+				  <p>打开对象结构窗口。</p>
+				  <p>&nbsp;</p>
+				</div>
+				<h5>属性</h5>
+				<div>
+				  <p>&nbsp;</p>
+				  <p>打开属性窗口。</p>
+				  <p>&nbsp;</p>
+				</div>
+					<h5>资源</h5>
+				<div>
+				  <p>&nbsp;</p>
+				  <p>打开资源窗口。</p>
+				  <p>&nbsp;</p>
+				</div>
+				<h5>输出</h5>
+				<div>
+				  <p>&nbsp;</p>
+				  <p>打开输出窗口。</p>
+				  <p>&nbsp;</p>
+				</div>
+				  <h5>起始页窗口</h5>
+				<div>
+				  <p>&nbsp;</p>
+				  <p>打开场景编辑器起始页面。</p>
+				  <p>&nbsp;</p>
+				</div>
+				<h5>恢复所有窗口默认布局</h5>
+				<div>
+				  <p>&nbsp;</p>
+				  <p>将编辑器的窗口布局恢复到初始布局。</p>
+				  <p>&nbsp;</p>
+				</div>
+		</div>
       
       <h4>设置(Alt+T)</h4>
       <div>
@@ -178,30 +247,30 @@
       
          	<h4>帮助(Alt+H)</h4>
             <div><img src="img/5-2-9-img-07.png" alt="" />
-<h5>查看帮助(F1)</h5>
-            <div>
-              <p>&nbsp;</p>
-              <p>查看在线帮助文档。</p>
-              <p>&nbsp;</p>
-            </div>
+				<h5>查看帮助(F1)</h5>
+					<div>
+					  <p>&nbsp;</p>
+					  <p>查看在线帮助文档。</p>
+					  <p>&nbsp;</p>
+					</div>
+				
+				<h5>关于Cocostudio</h5>
+					<div>
+					  <p>&nbsp;</p>
+					  <p>打开cocostudio信息窗口。</p>
+					  <p>&nbsp;</p>
+					</div>
+				
+				
+				<h5>新版本检测</h5>
+					<div>
+					  <p>&nbsp;</p>
+					  <p>检查是否有新版本，进行版本升级。</p>
+					  <p>&nbsp;</p>
+					</div>
+					
             
-            <h5>关于Cocostudio</h5>
-            <div>
-              <p>&nbsp;</p>
-              <p>打开cocostudio信息窗口。</p>
-              <p>&nbsp;</p>
-            </div>
-            
-            
-            <h5>新版本检测</h5>
-            <div>
-              <p>&nbsp;</p>
-              <p>检查是否有新版本，进行版本升级。</p>
-              <p>&nbsp;</p>
-            </div>
-            	
-            
-      </div>
+			</div>
       
          	<h4>语言(Alt+L)</h4>
             <div><img src="img/5-2-9-img-08.png" alt="" />

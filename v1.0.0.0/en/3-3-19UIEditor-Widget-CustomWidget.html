@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>CustomWidget</title>
+<meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D游戏引擎,游戏开发工具" />
+<meta name="Description" content="CocoStudio帮助手册,CocoStudio中文手册,游戏编辑器使用帮助,CocoStudio用户指南"/>
+<link type="text/css" rel="stylesheet" href="style/style.css"  />
+</head>
+<body id="split">
+<div id="content">
+  <div rel="aboutXMLDoc">
+    <h2>CustomWidget</h2>
+    
+    <h3>Icon</h3>
+    <div class="desc">
+    <div class="descimg"><img src="img/3-3-19-img-01.png" alt="" /></div>
+    </div>
+    <h3>Description</h3>
+    <div class="desc">
+		<p>&nbsp;</p>
+		<p>Custom controls is by extending the control to make the custom Widget, Widget to add new properties and methods to create from the custom control, about the custom controls extension, please reference：<a href="https://github.com/cocos2d/cocos-docs/blob/master/manual/studio/ui-Widget-Expansion/en.md">UI-Widget-Expansion</a>.</p>
+		<p><br/>
+	  </p>
+		
+    </div>
+  
+   <h3>Size And Mode</h3>
+    <div class="desc">
+    	<p>&nbsp;</p>
+    	<p>For more information, see <a href="3-3-16UIEditor-General-Property.html">UI controls common attributes</a>.</p>
+    	<p>&nbsp;</p>
+    </div>
+    <h3>General Properties</h3>
+    <div class="desc">
+    	<p>&nbsp;</p>
+    	<p>For more information, see <a href="3-3-16UIEditor-General-Property.html#properties">UI controls common attributes</a>.</p>
+        <p>&nbsp;</p>
+    </div>
+    <h3>Widgets Layout</h3>
+    <div class="desc">
+   	  <p>&nbsp;</p>
+    	<h4>Absolute Layout</h4>
+        <div>
+          <h5>Percent </h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>Toggle switch of percent mode.</p>
+            <p>&nbsp;</p>
+          </div>
+          <h5>Coordinate</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>Sets the current widget's Coordinate, The unit is pixel.</p>
+            <p>&nbsp;</p>
+          </div>
+            <h5>Proportion（%）</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>Sets the current selected widget's Coordinate relative to the parent widget‘s size.</p>
+            <p>&nbsp;</p>
+          </div>
+      </div>
+      <h4>Relative Layout</h4>
+        <div>
+          <h5>Dock</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>Sets the current selected widget's dock. The default is parent widget. You can choose the parent and all the peer widgets which no layout relationship with current selected widget.</p>
+            <p>&nbsp;</p>
+          </div>
+          <h5>Dock is parent</h5>
+          <div>
+            <p>&nbsp;</p>
+            <ol>
+            <li>Horizontal Alignment： Sets the widget horizontal alignment mode relative to parent.Including&ldquo;left&rdquo;、&ldquo;middle&rdquo; and &ldquo;right&rdquo; three modes.</li>
+            <li>Vertical Alignment：Sets the widget horizontal alignment mode relative to parent.Including &ldquo;top&rdquo;、&ldquo;middow&rdquo; and &ldquo;bottom&rdquo; three modes.</li>
+            </ol>
+            <p>&nbsp;</p>
+          </div>
+          <h5>Dock is peer</h5>
+          <div>
+            <p>&nbsp;</p>
+            <ol>
+            <li>Dock Ddge ：Sets the dock direction relative to the dock，the current selected widget will cling to one side of dock object.<br />
+            </li>
+            <li>Horizontal Alignment：Sets the widget horizontal alignment mode relative to parent.Including&ldquo;left&rdquo;、&ldquo;middle&rdquo; and &ldquo;right&rdquo; three modes.( This attribute will be show only when the dock edge seleted &quot;top&quot;or“bottom&quot;.)</li>
+            <li>Vertical Alignment：Sets the widget horizontal alignment mode relative to parent.Including &ldquo;top&rdquo;、&ldquo;middow&rdquo; and &ldquo;bottom&rdquo; three modes.( This attribute will be show only when the dock edge seleted &quot;top&quot;or“bottom&quot;.)</li>
+            </ol>
+            <p>&nbsp;</p>
+          </div>
+          <h5>Edge</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>Sets the current widget's  position displacement
+relative to the dock.The unit is pixel.</p>
+            <p>&nbsp;</p>
+          </div>
+          
+      </div>
+  
+      <h4>Linear Horizontal</h4>
+        <div> 
+             <h5>Vertical Alignment</h5>
+             <div>
+               <p>&nbsp;</p>
+               <p>Sets the widget horizontal alignment mode relative to parent.Including &ldquo;top&rdquo;、&ldquo;middow&rdquo; and &ldquo;bottom&rdquo; three modes.</p>
+               <p>&nbsp;</p>
+          </div>
+              
+                 <h5>Edge          </h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>Sets the current widget's  position displacement
+relative to the dock.The unit is pixel.</p>
+            <p>&nbsp;</p>
+          </div>
+      </div>
+     
+      <h4>Linear Vertical</h4>
+        <div>
+          <h5>Horizontal Alignment</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>Sets the widget horizontal alignment mode relative to parent.Including&ldquo;left&rdquo;、&ldquo;middle&rdquo; and &ldquo;right&rdquo; three modes.</p>
+            <p>&nbsp;</p>
+          </div>
+             <h5>Edge</h5>
+          <div>
+            <p>&nbsp;</p>
+            <p>Sets the current widget's  position displacement
+relative to the dock.The unit is pixel.</p>
+            <p>&nbsp;</p>
+          </div>
+      </div>
+    
+      </div>
+     <h3>Feature</h3>
+    <div class="desc">
+   	  <div descimg><img src="img/3-3-18-img-02.png" alt="" /></div>
+ 
+        	<h4>Clip</h4>
+            <div class="desc">
+              <p>&nbsp;</p>
+              <p>Hides control's child controls, which are located out of the display area.</p>
+              <p>&nbsp;</p>
+</div>
+                       <h4>File</h4>
+            <div class="desc">
+              <p>&nbsp;</p>
+              <p>Sets a picture (png, jpg) that will be displayed with default status.</p>
+              <p>&nbsp;</p>
+        </div>  
+    </div>
+  
+</div> 
+   <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp; Ver:1.1.0 </div>
+</div>
+</body>
+</html>
